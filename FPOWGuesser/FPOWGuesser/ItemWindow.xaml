@@ -1,0 +1,15 @@
+﻿<Window x:Class="FPOWGuesser.ItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FPOWGuesser"
+        mc:Ignorable="d" Closing="Window_Closing"
+        Title="Item Window" Height="113.915" Width="300.792" Background="#FF252525">
+    <Grid>
+        <StackPanel Margin="5">
+            <TextBlock HorizontalAlignment="Center" x:Name="top" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="36" Foreground="#FFE8E8E8" FontFamily="Consolas"/>
+            <TextBlock HorizontalAlignment="Center" x:Name="bottom" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontSize="18" Foreground="#FFE8E8E8" FontFamily="Consolas"/>
+        </StackPanel>
+    </Grid>
+</Window>
