@@ -143,8 +143,10 @@ namespace FPOWGuesser
 
         public HashSet<string> GetEngDictionary()
         {
-           HashSet<string> dd = new HashSet<string>();
-            foreach (string g in File.ReadAllLines(@"F:\VS Files\FPOWGuesser\FPOWGuesser\words.txt"))
+            HashSet<string> dd = new HashSet<string>();
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            var wordsPath = path + @"\FPOWGuesser\words.txt";
+            foreach (string g in File.ReadAllLines(wordsPath))
             {
                dd.Add(g.ToLower());
             }
